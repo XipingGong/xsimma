@@ -11,9 +11,9 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-__all__ = ['plttimeseries', 'plthist']
+__all__ = ['plottimeseries', 'plothist']
 
-def plttimeseries(dat, nplots=1, nsubplots=1, label='dat', **kwargs):
+def plottimeseries(dat, nplots=1, nsubplots=1, label='dat', **kwargs):
     """plot time series and histograms of a given property data.
 
     Parameters
@@ -48,8 +48,8 @@ def plttimeseries(dat, nplots=1, nsubplots=1, label='dat', **kwargs):
 
     >>> # loading data
     >>> print('Extracting the data files >>')
-    >>> wdir = '/home/ping/programs/xsimma/tests/data/' # modify here
-    >>> dat_files = wdir + 'aaqaa3*.dat'
+    >>> wdir = '/home/ping/programs/xsimma' # xsimma path
+    >>> dat_files = wdir + '/tests/data/aaqaa3*.dat'
     >>> dat_files = glob.glob(dat_files)
     >>> dat_files = sorted(dat_files)
     >>> for k in range(0,len(dat_files)): print(dat_files[k])
@@ -75,8 +75,8 @@ def plttimeseries(dat, nplots=1, nsubplots=1, label='dat', **kwargs):
     #energy.shape =  (800,)
 
     >>> # plotting time series of conditions array
-    >>> xsim.plttimeseries(condx, nsubplots=8, bins=50, label='condx') # 8 subplots
-    >>> xsim.plttimeseries(condx, nplots=2, nsubplots=4, bins=50, label='condx') # 2 plots and 4 subplots for each plot
+    >>> xsim.plottimeseries(condx, nsubplots=8, bins=50, label='condx') # 8 subplots
+    >>> xsim.plottimeseries(condx, nplots=2, nsubplots=4, bins=50, label='condx') # 2 plots and 4 subplots for each plot
 
     """
 
@@ -115,7 +115,7 @@ def plttimeseries(dat, nplots=1, nsubplots=1, label='dat', **kwargs):
             plt.xlim([xmin, xmax])
 
 
-def plthist(dat, nplots=1, nsegs=1, label='dat', **kwargs):
+def plothist(dat, nplots=1, nsegs=1, label='dat', **kwargs):
     """plot histogram distributions of a given property data.
 
     Parameters
@@ -154,8 +154,8 @@ def plthist(dat, nplots=1, nsegs=1, label='dat', **kwargs):
 
     >>> # loading data
     >>> print('Extracting the data files >>')
-    >>> wdir = '/home/ping/programs/xsimma/tests/data/' # modify here
-    >>> dat_files = wdir + 'aaqaa3*.dat'
+    >>> wdir = '/home/ping/programs/xsimma' # xsimma path
+    >>> dat_files = wdir + '/tests/data/aaqaa3*.dat'
     >>> dat_files = glob.glob(dat_files)
     >>> dat_files = sorted(dat_files)
     >>> for k in range(0,len(dat_files)): print(dat_files[k])
@@ -181,8 +181,8 @@ def plthist(dat, nplots=1, nsegs=1, label='dat', **kwargs):
     #energy.shape =  (800,)
 
     >>> # plotting histogram distributions of energy array
-    >>> xsim.plthist(energy, nsegs=8, bins=50, label='energy') # 8 segments
-    >>> xsim.plthist(energy, nplots=2, nsegs=4, bins=50, label='energy') # 2 plots, 4 segments for each plot
+    >>> xsim.plothist(energy, nsegs=8, bins=50, label='energy') # 8 segments
+    >>> xsim.plothist(energy, nplots=2, nsegs=4, bins=50, label='energy') # 2 plots, 4 segments for each plot
 
     """
 

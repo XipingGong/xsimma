@@ -67,9 +67,9 @@ def compute_rg(traj, atomsinx=None, masses=None):
 
     >>> # loading trajectories
     >>> print('Extracting the trajectory files >>')
-    >>> wdir = '/home/ping/programs/xsimma/tests' # modify here
-    >>> traj_files = wdir + '/data/aaqaa3*.dcd'
-    >>> natpdb = wdir + '/data/aaqaa3.pdb'
+    >>> wdir = '/home/ping/programs/xsimma' # xsimma path
+    >>> traj_files = wdir + '/tests/data/aaqaa3*.dcd'
+    >>> natpdb = wdir + '/tests/data/aaqaa3.pdb'
     >>> traj_files = glob.glob(traj_files)
     >>> traj_files = sorted(traj_files)
     >>> for traj_file in traj_files: print(traj_file)
@@ -189,9 +189,9 @@ def compute_qcontacts(traj, reference, pairs, beta=50, gamma=1.8, epsilon=0.0):
 
     >>> # loading trajectories
     >>> print('Extracting the trajectory files >>')
-    >>> wdir = '/home/ping/programs/xsimma/tests/data/' # modify here
-    >>> traj_files = wdir + 'aaqaa3*.dcd'
-    >>> natpdb = wdir + 'aaqaa3.pdb'
+    >>> wdir = '/home/ping/programs/xsimma' # xsimma path
+    >>> traj_files = wdir + '/tests/data/aaqaa3*.dcd'
+    >>> natpdb = wdir + '/tests/data/aaqaa3.pdb'
     >>> traj_files = glob.glob(traj_files)
     >>> traj_files = sorted(traj_files)
     >>> for traj_file in traj_files: print(traj_file)

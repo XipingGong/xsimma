@@ -13,8 +13,8 @@ Trajectory analysis of replica exchange molecular dynamics simulations.
 .. autosummary::
    :toctree: .
 
-   compute_rg
-   compute_qcontacts
-   plttimeseries
-   plthist
+   remd.compute_rg
+   remd.compute_qcontacts
+   plot.plottimeseries
+   plot.plothist
 
