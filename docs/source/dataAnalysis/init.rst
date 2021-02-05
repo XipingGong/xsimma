@@ -10,6 +10,7 @@ REMD
 Trajectory analysis of replica exchange molecular dynamics simulations.
 
 .. currentmodule:: xsimma.remd
+
 .. autosummary::
    :toctree: .
 
